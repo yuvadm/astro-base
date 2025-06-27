@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "dev:wrangler": "wrangler pages dev --compatibility-date=2024-06-27 --d1=DB=astro-base-db -- astro dev",
+    "dev:wrangler": "wrangler pages dev -- astro dev",
     "build": "astro build",
     "preview": "wrangler pages dev dist",
     "deploy": "wrangler pages deploy dist",
