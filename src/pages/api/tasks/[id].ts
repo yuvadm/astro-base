@@ -1,5 +1,7 @@
 import type { APIRoute } from 'astro';
 
+export const prerender = false;
+
 export const PUT: APIRoute = async ({ params, request, locals }) => {
   try {
     const db = locals.runtime.env.DB;
