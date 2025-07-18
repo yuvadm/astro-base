@@ -1,0 +1,25 @@
+{
+    "name": "proj-name",
+    "main": "./dist/_worker.js/index.js",
+    "compatibility_date": "2025-07-11",
+    "compatibility_flags": [
+        "nodejs_compat"
+    ],
+    "assets": {
+        "binding": "ASSETS",
+        "directory": "./dist"
+    },
+    "observability": {
+        "enabled": true
+    }
+    // "routes": [
+    //     {
+    //         "pattern": "example.com",
+    //         "custom_domain": true
+    //     },
+    //     {
+    //         "pattern": "www.example.com",
+    //         "custom_domain": true
+    //     }
+    // ]
+}
