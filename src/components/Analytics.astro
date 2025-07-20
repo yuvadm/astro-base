@@ -3,10 +3,11 @@ import { analytics } from "../config/analytics";
 
 const GOOGLE_ANALYTICS_ID = analytics.googleAnalyticsId;
 const FATHOM_ANALYTICS_ID = analytics.fathomAnalyticsId;
+const isProduction = import.meta.env.PROD;
 ---
 
 {
-    GOOGLE_ANALYTICS_ID && (
+    isProduction && GOOGLE_ANALYTICS_ID && (
         <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}
@@ -22,7 +23,7 @@ const FATHOM_ANALYTICS_ID = analytics.fathomAnalyticsId;
     )
 }
 {
-    FATHOM_ANALYTICS_ID && (
+    isProduction && FATHOM_ANALYTICS_ID && (
         <script
             src="https://cdn.usefathom.com/script.js"
             data-site={FATHOM_ANALYTICS_ID}
